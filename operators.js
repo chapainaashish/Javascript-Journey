@@ -35,3 +35,12 @@ let result = marks > 40 ? 'Passed' : 'Failed'
 // Logical AND(&&)
 // Logical OR(||)
 // Logical(!)
+// -------------------EXERCISE-----------------------
+// return true if width>height else false
+
+function isValid(width, height) {
+    // we don't need to set true and false explicitly
+    return (width > height);
+}
+
+console.log(isValid(1000, 800));
