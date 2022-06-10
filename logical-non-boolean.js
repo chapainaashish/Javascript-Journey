@@ -9,6 +9,7 @@ console.log(false || "aashish");
 // null
 // false
 // ""   (empty string)
+// 0
 // NAN (Not a number)
 
 //Truthy: Anything that is not Falsy is TRUTHY
