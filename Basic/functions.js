@@ -10,7 +10,7 @@ namaskar("Aashish");
 // Calculating Task
 function square(number) {
     return number * number;
-}
+};
 
 
 let result = square(2);
