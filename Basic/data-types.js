@@ -1,5 +1,6 @@
 // We have mainly Primitive and Referenced data type in Javascript
-//The default value of variable in javascript is undefined
+// The default value of variable in javascript is undefined
+// Avoid global variable and constant as much as possible
 
 //Primitive data types in javascript------------------------------
 
