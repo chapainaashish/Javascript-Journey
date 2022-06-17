@@ -1,6 +1,9 @@
 // The get syntax binds an object property to a function
 // that will be called when that property is looked up. 
 // this way we can use function like a property
+// Getter is used to set object property dynamically and it is read only
+// to make it write, we have to use setter, setter is used to assign some 
+// value to the property dynamically 
 const person = {
     firstName: "Aashish",
     lastName: "Chapain",
