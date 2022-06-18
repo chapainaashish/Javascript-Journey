@@ -1,0 +1,21 @@
+<!-- Changing html content, attribute value and generating dynamic html content -->
+<body>
+  <p id="person">Leo</p>
+  <p id="date"></p>
+  <img
+    id="image"
+    src="/HTML-DOM/time_zone_map-wallpaper-2560x1440.jpg"
+    alt=""
+  />
+  <script>
+    // Changing html elements value using innerHTML property
+    document.getElementById("person").innerHTML = "Aashish";
+
+    // Changing the value of the attribute using src property
+    document.getElementById("image").src =
+      "/HTML-DOM/winter_nature_2-wallpaper-5120x2880.jpg";
+
+    // Generating dynamic html content
+    document.getElementById("date").innerHTML = "Date: " + Date();
+  </script>
+</body>
