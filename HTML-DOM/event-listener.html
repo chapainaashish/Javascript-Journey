@@ -1,0 +1,61 @@
+<!-- DOM Event listener 
+    We can add as many events in elements i.e there is no boundaries
+    Basic Syntax------;
+    element.addEventListener(event, function, useCapture);
+    
+    Example-----------;
+    button.addEventListener("click", myfunction);
+    
+    
+    
+    NOTE: function is passed as property (anonymous function if there need parameter) and useCapture is optional
+
+Event propagation means which event should be handle first
+There are two ways of event propagation(event handling) in the HTML DOM, bubbling and capturing.
+
+In bubbling the inner most element's event is handled first and then the outer
+In capturing the outer most element's event is handled first and then the inner
+
+we can specify the propagation type by using the "useCapture" parameter:
+addEventListener(event, function, useCapture);
+
+DEFAULT Parameter: false (indicates bubbling propagation)
+Manual             true (indicates capturing propagation)
+ -->
+<html>
+  <body>
+    <button id="btn">Submit</button>
+    <p id="text">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus,
+      sit?
+    </p>
+  </body>
+  <script>
+    // If we have to pass arguments in function, we should create anonymous function
+    // We using capturing propagation here (passed third arguments as true which indicates capturing)
+    // Button event
+    document.getElementById("btn").addEventListener(
+      "click",
+      function () {
+        clickFunction(this);
+      },
+      true
+    );
+
+    function clickFunction(id) {
+      id.innerHTML = "Clicked";
+    }
+
+    // Paragraph event
+    document.getElementById("text").addEventListener("mousemove", textChanger);
+    function textChanger() {
+      document.getElementById("text").innerHTML = Math.random();
+    }
+
+    /* Removing event listener
+    document
+      .getElementById("text")
+      .removeEventListener("mousemove", textChanger);
+      */
+  </script>
+</html>

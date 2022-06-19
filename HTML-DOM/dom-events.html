@@ -1,0 +1,32 @@
+<!-- 
+Handling HTML events 
+The onload and onunload events are triggered when the user enters or leaves the page.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <!--The onload and onunload events can be used to deal with cookies.
+    Here, checkCookies() function is just for examples-->
+  <body onload="checkCookies()">
+    <!-- On button click (USING INLINE SCRIPT)-->
+    <button onclick="this.innerHTML = 'You clicked'">Click Here</button>
+
+    <!-- On button click (USING FUNCTION) -->
+    <button onclick="buttonClick(this)">Click Me</button>
+    <!-- The onchange event is often used in combination with validation of input
+    fields. Below is an example of how to use the onchange. The upperCase()
+    function will be called when a user changes the content of an input field. -->
+    <input type="text" id="fname" onchange="upperCase()" />
+  </body>
+  <script>
+    function buttonClick(id) {
+      id.innerHTML = "Just clicked";
+    }
+  </script>
+</html>
