@@ -1,0 +1,74 @@
+<!-- 
+form validation using js
+technique to validate form 
+      use js function
+      use required keyword in input field
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        margin-left: 1rem;
+        line-height: 2rem;
+      }
+      label {
+        display: block;
+      }
+
+      .form-item {
+        margin-bottom: 1rem;
+      }
+
+      button {
+        border-radius: 10px;
+        background-color: dodgerblue;
+        color: rgb(255, 255, 255);
+        border-style: none;
+        height: 2rem;
+        width: 5.5rem;
+      }
+
+      button:hover {
+        background-color: rgb(0, 17, 255);
+        cursor: pointer;
+      }
+
+      input[type="text"],
+      input[type="email"] {
+        border: 1px solid rgb(214, 212, 212);
+        height: 1.5rem;
+        border-radius: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" name="sign-in" onsubmit="return validateForm();">
+      <div class="form-item">
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name" />
+      </div>
+      <div class="form-item">
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" required />
+      </div>
+      <div class="form-item">
+        <button type="reset">Clear</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+    <script>
+      function validateForm() {
+        let name = document.forms["sign-in"]["name"].value;
+        if (name == "") {
+          alert("Name field can't be empty");
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>
