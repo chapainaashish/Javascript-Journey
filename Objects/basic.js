@@ -4,7 +4,9 @@ value of the key in javascript can be anything: variable, constant, function
 every object has a constructor property and that references a function 
 that was used to create that object in javascript, even function are object,
 javascript use garbage collector, so we don't have to worry about allocating 
-and deallocating memory
+and deallocating memory.
+
+Objects are commonly defined as constant and it is recommended also
 */
 const person = {
     firstName: "Aashish",
