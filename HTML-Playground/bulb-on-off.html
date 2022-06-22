@@ -1,0 +1,28 @@
+<!-- turn bulb on and off -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img id="bulb" src="/HTML-Playground/turn-off.jpg" alt="" />
+    <button id="on" onclick="buttonOn()">Turn ON</button>
+    <button id="off" onclick="buttonOff()">Turn OFF</button>
+    <script>
+      const buttonOn = function onButton() {
+        document.getElementById("bulb").src = "/HTML-Playground/turn-on.jpg";
+        document.getElementById("on").style.backgroundColor = "blue";
+
+        document.getElementById("off").style.backgroundColor = "yellow";
+      };
+      const buttonOff = function offButton() {
+        document.getElementById("bulb").src = "/HTML-Playground/turn-off.jpg";
+        document.getElementById("off").style.backgroundColor = "red";
+        document.getElementById("on").style.backgroundColor = "yellow";
+      };
+    </script>
+  </body>
+</html>

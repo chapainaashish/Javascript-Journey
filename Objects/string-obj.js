@@ -54,3 +54,6 @@ console.log(data.trim());
 
 // split string and return an array of string
 console.log(data.split(' '));
+
+// slice() extracts a part of a string and returns the extracted part in a new string.
+console.log(data.slice(1, 3));

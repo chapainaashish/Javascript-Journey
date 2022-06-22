@@ -1,4 +1,10 @@
 //Referenced data type of Javascript{Array}
+// In JavaScript, arrays use numbered indexes.  
+
+// In JavaScript, objects use named indexes.
+
+// Arrays are a special kind of objects, with numbered indexes.
+
 let firstName = ["aashish", "ashbin", 11, 45];
 
 console.log(firstName);
