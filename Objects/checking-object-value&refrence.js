@@ -1,3 +1,10 @@
+// Since object in JS are reference type we can compare objects by value and reference
+let a = { value: 20 };
+let b = a;
+a.value = 10;
+console.log(b.value);
+//result 10
+
 // Constructor function
 function Address(street, city, zipCode) {
     this.street = street;

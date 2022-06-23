@@ -9,6 +9,13 @@ and deallocating memory.
 
 Objects are commonly defined as constant and it is recommended also
 */
+//Referenced data type
+let school = {
+    address: "NEPAL",
+    motto: "Educate the world"
+}
+
+
 const person = {
     firstName: "Aashish",
     address: {
@@ -43,5 +50,4 @@ let priceRange = [
     { label: '$', tooltip: 'Moderate', minPricePerPerson: 11, maxPricePerPerson: 20 },
     { label: '$', tooltip: 'Expensive', minPricePerPerson: 21, maxPricePerPerson: 50 },
 ];
-
 
