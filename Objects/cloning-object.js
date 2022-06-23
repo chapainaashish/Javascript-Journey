@@ -1,4 +1,4 @@
-// Cloning/Duplicating Object
+// Cloning/Duplicating Object in JavaScript
 const student = {
     fname: "leonardo",
     study() {
@@ -23,6 +23,6 @@ const student2 = Object.assign({}, student);
 const student3 = Object.assign({ address: "Pokhara" }, student)
 
 // MORE ELEGANT AND NEW WAY: to copy all the methods and properties of the source object
-// Using the Spread Operator, ...: spread operator
+// Using the Spread Operator, '...': spread operator
 const student4 = { ...student }
 

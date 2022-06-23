@@ -1,4 +1,4 @@
-//Enumerating object in javascript
+//Enumerating object properties in JavaScript
 const person = {
     fname: "aashish",
     eat() {
@@ -24,6 +24,6 @@ for (let entry of Object.entries(person)) {
     console.log(entry);
 }
 
-//Using in operator we can check that the given property exist in given object
+//Using 'in' keyword operator we can check that the given property exist in the given object
 if ('fname' in person)
     console.log("Yes")

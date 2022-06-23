@@ -1,4 +1,4 @@
-// String in Javascript
+// String Object in Javascript
 
 //Primitive string
 const data = 'hello';
@@ -11,7 +11,7 @@ console.log(typeof dataobj);
 // Return 'Objects'
 
 // However JS engine wrap up primitive string to object string, so we can use
-// string object methods and properties in primitive string
+// String object methods and properties in primitive string
 
 // Length property
 console.log(data.length);
@@ -22,10 +22,11 @@ console.log(data[4]);
 // To check if a string includes certain characters.
 // Return a boolean, in this case true.
 console.log(data.includes("hello"));
+
 // Returns false.
 console.log(data.includes("hi"));
 
-// To check how th string starts.
+// To check how the string starts.
 // Return a boolean, in this case true.
 console.log(data.startsWith('he'));
 
