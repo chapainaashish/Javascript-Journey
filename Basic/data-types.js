@@ -1,4 +1,7 @@
 // We have mainly Primitive and Referenced data type in Javascript
+// Primitive data types are: String, Number, Boolean, Symbol, undefined and null
+// Referenced data types are: Object, Function and Array, they use constructor function to create an object.
+// in another word, referenced types are objects.
 // The default value of variable in javascript is undefined
 // Avoid global variable and constant as much as possible
 
@@ -23,7 +26,6 @@ let lastName = null;
 
 
 //Referenced data type
-
 let school = {
     address: "NEPAL",
     motto: "Educate the world"

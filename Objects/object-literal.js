@@ -1,6 +1,7 @@
 /*
+OBJECT LITERALS, ADDING, DELETING PROPERTIES OF AN OBJECT
 Object are used to group highly related variable/function upon the single name
-value of the key in javascript can be anything: variable, constant, function
+value of the key. In javascript object can be anything: variable, constant, function.
 every object has a constructor property and that references a function 
 that was used to create that object in javascript, even function are object,
 javascript use garbage collector, so we don't have to worry about allocating 
@@ -17,32 +18,23 @@ const person = {
     phNumber: 983333333,
     mark: [58, 45, 90, 23],
     isPassionate: true,
-    eat: function () {
-        console.log("eat");
+    info: function () {
+        return this.firstName + " " + this.address;
+        // return person.firstName + " " + person.lastName; same as above
     }
 };
 
-// calling eat method
-person.eat();
+// calling info method
+console.log(person.info());
 
-// object in javascript are dynamic that means once we define object in javascript
+// object in javascript are dynamic that means once we define object in javascript, 
 // we can add, delete method and attributes to that object
 person.lastName = "chapain";
+person['hobby'] = "experimenting";
+
 delete person.firstName;
 
 //adding method
 person.read = function () { }
 
 
-
-const person = {
-    firstName: "John",
-    lastName: "Doe",
-    id: 5566,
-    fullName: function () {
-        return this.firstName + " " + this.lastName;
-        // return person.firstName + " " + person.lastName; same as above
-    }
-};
-
-console.log(person.fullName())

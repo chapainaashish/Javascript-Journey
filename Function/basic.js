@@ -1,4 +1,5 @@
 /*
+THE BEST FUNCTION ARE THOSE WITH  NO PARAMETERS ----UNCLE BOB
 Function Declaration  
 There are two ways of function definition in JS
 Termination of function with semi-colon isn't necessary but necessary for variable and constant declaration
@@ -25,8 +26,8 @@ let write = function () {
 };
 
 // Named Function Expression
-const jump = function jump() {
-    console.log("jump");
+const jump = function jump(times) {
+    console.log("jump" + times);
 };
 
 read();
@@ -38,3 +39,10 @@ let lekhni = write;
 let padni = read;
 lekhni();
 padni();
+
+// In JavaScript, functions are objects. They have properties and methods. 
+jump.name;
+jump.length;
+jump.constructor; // returns Function()
+jump.call({}, 1); // to call the jump function 
+jump.apply({}, [1]);
