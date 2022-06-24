@@ -6,6 +6,7 @@ const student = {
     }
 };
 
+
 const anotherStudent = {};
 
 //OLD WAY{Not recommended}
