@@ -8,8 +8,8 @@ HtmlElement.prototype.focus = function () {
     console.log("focused");
 }
 
-function DeriveHTML(...elements) {
-    this.items = [];
+function DeriveHTML(items = []) {
+    this.items = items;
 
     this.addItem = function (element) {
         this.items.push(element);
@@ -19,6 +19,8 @@ function DeriveHTML(...elements) {
     }
 }
 
-const j = new DeriveHTML([1, 2, 3]);
-j.addItem(9);
+DeriveHTML.prototype = new HtmlElement()
+DeriveHTML.prototype.constructor = DeriveHTML;
+
+const j = new DeriveHTML();
 console.log(j)
