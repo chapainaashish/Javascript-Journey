@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Calculator/styles.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <main class="grid">
+      <div class="grid--row">
+        <p id="box"></p>
+      </div>
+      <div class="grid--row top-row">
+        <button
+          class="numerical"
+          value="C"
+          onclick="document.getElementById('box').innerHTML=''"
+        >
+          C
+        </button>
+        <button class="numerical" value="/" onclick="inputCalc(this)">/</button>
+      </div>
+      <div class="grid--row">
+        <button class="numerical" value="7" onclick="inputCalc(this)">7</button>
+        <button class="numerical" value="8" onclick="inputCalc(this)">8</button>
+        <button class="numerical" value="9" onclick="inputCalc(this)">9</button>
+        <button class="numerical" value="*" onclick="inputCalc(this)">*</button>
+      </div>
+      <div class="grid--row">
+        <button class="numerical" value="4" onclick="inputCalc(this)">4</button>
+        <button class="numerical" value="5" onclick="inputCalc(this)">5</button>
+        <button class="numerical" value="6" onclick="inputCalc(this)">6</button>
+        <button class="numerical" value="+" onclick="inputCalc(this)">+</button>
+      </div>
+      <div class="grid--row">
+        <button class="numerical" value="1" onclick="inputCalc(this)">1</button>
+        <button class="numerical" value="2" onclick="inputCalc(this)">2</button>
+        <button class="numerical" value="3" onclick="inputCalc(this)">3</button>
+        <button class="numerical" value="-" onclick="inputCalc(this)">-</button>
+      </div>
+      <div class="grid--row">
+        <button class="numerical" value="0" onclick="inputCalc(this)">0</button>
+        <button class="numerical" value="." onclick="inputCalc(this)">.</button>
+        <button class="numerical" value="%" onclick="inputCalc(this)">%</button>
+        <button
+          class="numerical"
+          value="="
+          onclick="document.getElementById('box').innerHTML = eval(document.getElementById('box').innerHTML)"
+        >
+          =
+        </button>
+      </div>
+    </main>
+    <script src="../Calculator/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+/* .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+} */
+
+.numerical {
+    border-style: none;
+    margin: 0.5rem;
+    width: 5rem;
+    height: 4rem;
+    font-size: 2rem;
+    background-color: #2B2E4A;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    color: whitesmoke;
+}
+
+.numerical:hover {
+    background-color: #1a1c2c;
+    cursor: pointer;
+}
