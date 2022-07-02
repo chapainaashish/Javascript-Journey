@@ -2,18 +2,33 @@
     box-sizing: border-box;
 }
 
-/* .grid {
+.grid {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(6, auto);
 
-} */
+}
+
+.grid--box {
+    grid-column: 1 / 5;
+    font-size: 4rem;
+    overflow: hidden;
+}
+
+.c-box {
+    grid-column: 1 / 4;
+}
+
+#box {
+    margin: 0;
+    color: #30323b;
+}
 
 .numerical {
     border-style: none;
     margin: 0.5rem;
-    width: 5rem;
-    height: 4rem;
+    width: auto;
+    height: 6rem;
     font-size: 2rem;
     background-color: #2B2E4A;
     box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
