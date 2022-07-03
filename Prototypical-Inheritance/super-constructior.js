@@ -1,8 +1,8 @@
-// Calling the super constructor
-// Method Overriding: method overriding is when we override the method of the parent class and 
-// define the same method with the same name in the child class.
-// it is used to call the constructor of the superclass and assign the superclass' properties to the subclass.
-
+/* Calling the super constructor
+Method Overriding: method overriding is when we override the method of the parent class and 
+define the same method with the same name in the child class.
+it is used to call the constructor of the superclass and assign the superclass' properties to the subclass.
+*/
 // creating prototype intermediate inheritance function
 function createPrototype(ParentClass, ChildClass) {
     ChildClass.prototype = Object.create(ParentClass.prototype)
