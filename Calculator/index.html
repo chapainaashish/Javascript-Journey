@@ -9,37 +9,127 @@
   </head>
   <body>
     <main class="grid">
-      <div class="grid--box">
-        <p id="box">0</p>
-      </div>
+      <input type="text" id="box" />
       <button
-        class="numerical c-box"
+        class="buttons buttons__primary grid--cbox"
         value="C"
-        onclick="document.getElementById('box').innerHTML='0'"
+        onclick="clr()"
       >
         C
       </button>
-      <button class="numerical" value="/" onclick="inputCalc(this)">/</button>
-      <button class="numerical" value="7" onclick="inputCalc(this)">7</button>
-      <button class="numerical" value="8" onclick="inputCalc(this)">8</button>
-      <button class="numerical" value="9" onclick="inputCalc(this)">9</button>
-      <button class="numerical" value="*" onclick="inputCalc(this)">*</button>
-      <button class="numerical" value="4" onclick="inputCalc(this)">4</button>
-      <button class="numerical" value="5" onclick="inputCalc(this)">5</button>
-      <button class="numerical" value="6" onclick="inputCalc(this)">6</button>
-      <button class="numerical" value="+" onclick="inputCalc(this)">+</button>
-      <button class="numerical" value="1" onclick="inputCalc(this)">1</button>
-      <button class="numerical" value="2" onclick="inputCalc(this)">2</button>
-      <button class="numerical" value="3" onclick="inputCalc(this)">3</button>
-      <button class="numerical" value="-" onclick="inputCalc(this)">-</button>
-      <button class="numerical" value="0" onclick="inputCalc(this)">0</button>
-      <button class="numerical" value="." onclick="inputCalc(this)">.</button>
-      <button class="numerical" value="%" onclick="inputCalc(this)">%</button>
       <button
-        class="numerical"
-        value="="
-        onclick="document.getElementById('box').innerHTML = eval(document.getElementById('box').innerHTML)"
+        class="buttons buttons__primary"
+        value="/"
+        onclick="inputCalc(this)"
       >
+        /
+      </button>
+      <button
+        class="buttons buttons__primary"
+        value="7"
+        onclick="inputCalc(this)"
+      >
+        7
+      </button>
+      <button
+        class="buttons buttons__primary"
+        value="8"
+        onclick="inputCalc(this)"
+      >
+        8
+      </button>
+      <button
+        class="buttons buttons__primary"
+        value="9"
+        onclick="inputCalc(this)"
+      >
+        9
+      </button>
+      <button
+        class="buttons buttons__primary"
+        value="*"
+        onclick="inputCalc(this)"
+      >
+        *
+      </button>
+      <button
+        class="buttons buttons__primary"
+        value="4"
+        onclick="inputCalc(this)"
+      >
+        4
+      </button>
+      <button
+        class="buttons buttons__primary"
+        value="5"
+        onclick="inputCalc(this)"
+      >
+        5
+      </button>
+      <button
+        class="buttons buttons__primary"
+        value="6"
+        onclick="inputCalc(this)"
+      >
+        6
+      </button>
+      <button
+        class="buttons buttons__primary"
+        value="+"
+        onclick="inputCalc(this)"
+      >
+        +
+      </button>
+      <button
+        class="buttons buttons__primary"
+        value="1"
+        onclick="inputCalc(this)"
+      >
+        1
+      </button>
+      <button
+        class="buttons buttons__primary"
+        value="2"
+        onclick="inputCalc(this)"
+      >
+        2
+      </button>
+      <button
+        class="buttons buttons__primary"
+        value="3"
+        onclick="inputCalc(this)"
+      >
+        3
+      </button>
+      <button
+        class="buttons buttons__primary"
+        value="-"
+        onclick="inputCalc(this)"
+      >
+        -
+      </button>
+      <button
+        class="buttons buttons__primary"
+        value="0"
+        onclick="inputCalc(this)"
+      >
+        0
+      </button>
+      <button
+        class="buttons buttons__primary"
+        value="."
+        onclick="inputCalc(this)"
+      >
+        .
+      </button>
+      <button
+        class="buttons buttons__primary"
+        value="%"
+        onclick="inputCalc(this)"
+      >
+        %
+      </button>
+      <button class="buttons buttons__primary" value="=" onclick="equalTo()">
         =
       </button>
     </main>

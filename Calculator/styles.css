@@ -1,5 +1,11 @@
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
 }
 
 .grid {
@@ -9,33 +15,36 @@
 
 }
 
-.grid--box {
-    grid-column: 1 / 5;
-    font-size: 4rem;
-    overflow: hidden;
-}
 
-.c-box {
-    grid-column: 1 / 4;
-}
-
-#box {
-    margin: 0;
-    color: #30323b;
-}
-
-.numerical {
+.buttons {
     border-style: none;
     margin: 0.5rem;
     width: auto;
-    height: 6rem;
+    height: 5.5rem;
     font-size: 2rem;
+}
+
+.buttons__primary {
     background-color: #2B2E4A;
     box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
     color: whitesmoke;
 }
 
-.numerical:hover {
+.grid--cbox {
+    grid-column: 1 / 4;
+}
+
+.buttons:hover {
     background-color: #1a1c2c;
     cursor: pointer;
+}
+
+#box {
+    border: 2px solid rgb(51, 50, 50);
+    width: auto;
+    color: #424346;
+    grid-column: 1 / 5;
+    overflow: hidden;
+    font-size: 3rem;
+    height: 6rem;
 }
